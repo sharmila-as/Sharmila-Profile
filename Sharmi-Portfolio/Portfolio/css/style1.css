@@ -52,6 +52,35 @@ header{
 	background: var(--main-color);
 	color: var(--text-color);
 }
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Phone view styling */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
 #menu-icon{
 	font-size: 36px;
 	color: var(--text-color);
