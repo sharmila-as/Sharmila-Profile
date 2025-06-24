@@ -27,19 +27,18 @@ sr.reveal('.home-text',{delay:190, origin:'bottom'})
 
 sr.reveal('.about,.services,.portfolio,.contact',{delay:200, origin:'bottom'})
 
-// Toggle menu on hamburger click
 function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
   navLinks.classList.toggle('show');
 }
 
 // Close menu on outside click
-document.addEventListener('click', function (event) {
+document.addEventListener('click', function (e) {
   const navLinks = document.getElementById('nav-links');
   const hamburger = document.querySelector('.hamburger');
 
-  // If the click is outside both hamburger and nav menu
-  if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
+  // If clicked outside the menu and hamburger
+  if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
     navLinks.classList.remove('show');
   }
 });
