@@ -75,7 +75,8 @@ header{
     align-items: flex-start;
     position: absolute;
     top: 60px;
-    right: 20px;
+    right: 10px;
+    left: auto;
     width: 200px;
     background: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
